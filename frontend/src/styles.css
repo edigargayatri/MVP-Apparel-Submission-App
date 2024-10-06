@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Styles */
+h2 {
+  color: #4A90E2; /* Header color */
+  text-align: center;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4A90E2; /* Navbar background color */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Home.css */
+
+.home-container {
+  background-color: #2642396e;
+  /* background-image: url('../public/images/img1.jpg');  */
+  background-size: cover; /* Make sure the background covers the whole container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  
+  height: 80vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center; /* Center text inside the content */
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Slight white overlay to improve text readability */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #666; /* Gray text color */
+}
+
+
+
+/* Form Styles */
+form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #4A90E2; /* Border color */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4A90E2; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Colorful Submission List */
+.submission-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the list */
+}
+
+.submission-card {
+  background-color: #E0F7FA; /* Card background color */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Responsive sizing */
+  transition: transform 0.2s, box-shadow 0.2s; /* Added box-shadow transition */
+}
+
+.submission-card:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Submission Details */
+.submission-card strong {
+  color: #4A90E2; /* Color for labels */
+}
+
+/* No Submissions Message */
+.no-submissions {
+  text-align: center;
+  font-size: 18px;
+  color: #A9A9A9; /* Light gray color */
+}
